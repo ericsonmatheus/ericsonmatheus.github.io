@@ -211,6 +211,19 @@ function App() {
             <Mail className="w-6 h-6" />
           </a>
         </div>
+        {/* <div className="max-w-2xl mx-auto bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+          <p className="text-gray-300 leading-relaxed">
+            With over 8 years of experience in technology, I've evolved from a data analyst into a versatile full-stack developer. 
+            My journey began in data analysis, where I developed a strong foundation in transforming complex datasets into actionable insights. 
+            This analytical background uniquely influences my approach to software development, allowing me to create data-driven solutions 
+            that combine robust backend architecture with intuitive user interfaces.
+          </p>
+          <p className="text-gray-300 leading-relaxed mt-4">
+            Currently, I specialize in building scalable web applications and data visualization tools that bridge the gap between 
+            data science and web development. I'm passionate about using technology to solve real-world problems and am always 
+            eager to learn and adapt to new challenges in this ever-evolving field.
+          </p>
+        </div> */}
       </header>
 
       {/* Skills Section */}
