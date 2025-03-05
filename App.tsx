@@ -140,7 +140,7 @@ const projects: Project[] = [
     title: "Antigo Portfólio",
     description: "Primeiro portfólio que construí, quando estava começando minha carreira na área de desenvolvimento.",
     category: "frontend",
-    image: "/public/images/old_portfolio.png",
+    image: "/images/old_portfolio.png",
     link: "https://portfolio-ericson.netlify.app/"
   },
   {
@@ -148,7 +148,7 @@ const projects: Project[] = [
     title: "Clone Netflix",
     description: "Quando comecei a estudar React, este foi o primeiro projeto que fiz.",
     category: "frontend",
-    image: "/public/images/netflix_clone.png",
+    image: "/images/netflix_clone.png",
     link: "https://ericsonmatheus-clone-net.netlify.app/"
   },
   {
@@ -156,7 +156,7 @@ const projects: Project[] = [
     title: "Desafio Clone Whatsapp",
     description: "Este projeto foi um desafio para uma vaga de desenvolvedor Full-Stack onde eu precisei desenvolver um clone do whatsapp. Eu fui aprovado neste desafio",
     category: "frontend",
-    image: "/public/images/frontend_whatsapp.png",
+    image: "/images/frontend_whatsapp.png",
     link: "https://ericsonmath-whats-desafio.netlify.app/"
   },
   {
@@ -164,7 +164,7 @@ const projects: Project[] = [
     title: "Desafio Clone Whatsapp",
     description: "Este projeto foi um desafio para uma vaga de desenvolvedor Full-Stack onde eu precisei desenvolver um clone do whatsapp. Neste link eu disponibilizo o código backend do desafio onde eu fui aprovado para a vaga.",
     category: "backend",
-    image: "/public/images/backend_whatsapp.jpg",
+    image: "/images/backend_whatsapp.jpg",
     link: "https://github.com/ericsonmatheus/clone-whatsapp-backend"
   },
   // {
@@ -194,7 +194,7 @@ function App() {
       {/* Header/Hero Section */}
       <header className="container mx-auto px-4 py-16 flex flex-col items-center text-center">
         <img 
-          src="/public/images/perfil.jpg"
+          src="/images/perfil.jpg"
           alt="Profile"
           className="w-32 h-32 rounded-full mb-6 object-cover border-4 border-blue-500"
         />
