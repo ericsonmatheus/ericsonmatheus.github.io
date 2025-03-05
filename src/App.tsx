@@ -29,6 +29,15 @@ const competencies: Competency[] = [
     icon: <Database className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
+        category: 'Python Analytics',
+        items: [
+          'Pandas & NumPy',
+          'ETL Proccessing',
+          'Jupyter Notebooks',
+          'Data Cleaning & Preprocessing'
+        ]
+      },
+      {
         category: 'Database & SQL',
         items: [
           'Advanced SQL Query Optimization',
@@ -38,21 +47,12 @@ const competencies: Competency[] = [
         ]
       },
       {
-        category: 'Python Analytics',
-        items: [
-          'Pandas & NumPy',
-          'Scikit-learn',
-          'Jupyter Notebooks',
-          'Data Cleaning & Preprocessing'
-        ]
-      },
-      {
         category: 'Visualization',
         items: [
-          'Tableau',
+          'Metabase',
+          'Streamlit',
           'Power BI',
           'Plotly & Matplotlib',
-          'Interactive Dashboards'
         ]
       },
       {
@@ -222,20 +222,20 @@ function App() {
       {/* Header/Hero Section */}
       <header className="container mx-auto px-4 py-16 flex flex-col items-center text-center">
         <img 
-          src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=200&h=200"
+          src="./src/images/perfil.jpg"
           alt="Profile"
           className="w-32 h-32 rounded-full mb-6 object-cover border-4 border-blue-500"
         />
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">John Doe</h1>
-        <p className="text-xl text-blue-400 mb-6">Data Analyst & Full-Stack Developer</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Ericson Matheus</h1>
+        <p className="text-xl text-blue-400 mb-6">Analista de Dados & Desenvolvedor Full-Stack</p>
         <div className="flex gap-4">
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">
+          <a href="https://github.com/ericsonmatheus" className="text-gray-300 hover:text-white transition-colors">
             <Github className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">
+          <a href="https://www.linkedin.com/in/ericson-matheus/" className="text-gray-300 hover:text-white transition-colors">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">
+          <a href="mailto:ericson.matheus.2016@gmail.com" className="text-gray-300 hover:text-white transition-colors">
             <Mail className="w-6 h-6" />
           </a>
         </div>
@@ -243,7 +243,7 @@ function App() {
 
       {/* Skills Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Core Competencies</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Principais Competências</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {competencies.map((competency) => (
             <div 
