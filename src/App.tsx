@@ -119,22 +119,22 @@ const competencies: Competency[] = [
 ];
 
 const projects: Project[] = [
-  {
-    id: 1,
-    title: "Market Trend Analysis Dashboard",
-    description: "Interactive dashboard analyzing market trends using Python, Pandas, and SQL, with visualizations in Plotly.",
-    category: "data",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=500",
-    link: "#"
-  },
-  {
-    id: 2,
-    title: "E-commerce Analytics Platform",
-    description: "Customer behavior analysis and sales prediction platform using machine learning algorithms.",
-    category: "data",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500",
-    link: "#"
-  },
+  // {
+  //   id: 1,
+  //   title: "Market Trend Analysis Dashboard",
+  //   description: "Interactive dashboard analyzing market trends using Python, Pandas, and SQL, with visualizations in Plotly.",
+  //   category: "data",
+  //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=500",
+  //   link: "#"
+  // },
+  // {
+  //   id: 2,
+  //   title: "E-commerce Analytics Platform",
+  //   description: "Customer behavior analysis and sales prediction platform using machine learning algorithms.",
+  //   category: "data",
+  //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500",
+  //   link: "#"
+  // },
   {
     id: 3,
     title: "Antigo Portfólio",
@@ -145,14 +145,6 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Real-time Chat Application",
-    description: "Full-stack chat application built with React, Node.js, and WebSocket technology.",
-    category: "frontend",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=500",
-    link: "#"
-  },
-  {
-    id: 5,
     title: "Clone Netflix",
     description: "Quando comecei a estudar React, este foi o primeiro projeto que fiz.",
     category: "frontend",
@@ -160,21 +152,29 @@ const projects: Project[] = [
     link: "https://ericsonmatheus-clone-net.netlify.app/"
   },
   {
-    id: 6,
-    title: "RESTful API Service",
-    description: "Scalable REST API built with Node.js, Express, and MongoDB for content management.",
-    category: "backend",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=500",
-    link: "#"
+    id: 5,
+    title: "Desafio Clone Whatsapp",
+    description: "Este projeto foi um desafio para uma vaga de desenvolvedor Full-Stack onde eu precisei desenvolver um clone do whatsapp. Eu fui aprovado neste desafio",
+    category: "frontend",
+    image: "./src/images/frontend_whatsapp.png",
+    link: "https://ericsonmath-whats-desafio.netlify.app/"
   },
   {
-    id: 7,
-    title: "Microservices Architecture",
-    description: "Distributed system using microservices architecture with Docker and Kubernetes.",
+    id: 6,
+    title: "Desafio Clone Whatsapp",
+    description: "Este projeto foi um desafio para uma vaga de desenvolvedor Full-Stack onde eu precisei desenvolver um clone do whatsapp. Neste link eu disponibilizo o código backend do desafio onde eu fui aprovado para a vaga.",
     category: "backend",
-    image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&q=80&w=500",
-    link: "#"
-  }
+    image: "./src/images/backend_whatsapp.jpg",
+    link: "https://github.com/ericsonmatheus/clone-whatsapp-backend"
+  },
+  // {
+  //   id: 7,
+  //   title: "Microservices Architecture",
+  //   description: "Distributed system using microservices architecture with Docker and Kubernetes.",
+  //   category: "backend",
+  //   image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&q=80&w=500",
+  //   link: "#"
+  // }
 ];
 
 function App() {
