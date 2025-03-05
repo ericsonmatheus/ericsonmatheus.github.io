@@ -25,129 +25,93 @@ interface Competency {
 const competencies: Competency[] = [
   {
     id: 'data',
-    title: 'Data Analysis',
+    title: 'Análise de Dados',
     icon: <Database className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
-        category: 'Python Analytics',
+        category: 'Análise com Python',
         items: [
           'Pandas & NumPy',
-          'ETL Proccessing',
+          'Desenvolvimento de Pipeline ETL',
           'Jupyter Notebooks',
-          'Data Cleaning & Preprocessing'
+          'Limpeza e Pré-processamento de Dados'
         ]
       },
       {
-        category: 'Database & SQL',
+        category: 'Banco de Dados & SQL',
         items: [
-          'Advanced SQL Query Optimization',
-          'Database Design & Modeling',
-          'ETL Pipeline Development',
-          'Data Warehouse Architecture'
+          'Otimização Avançada de Consultas SQL',
+          'Modelagem e Design de Banco de Dados',
+          'Tuning de Banco de Dados',
+          'Arquitetura de Data Lakehouse'
         ]
       },
       {
-        category: 'Visualization',
+        category: 'Visualização',
         items: [
           'Metabase',
           'Streamlit',
           'Power BI',
-          'Plotly & Matplotlib',
-        ]
-      },
-      {
-        category: 'Statistical Analysis',
-        items: [
-          'Hypothesis Testing',
-          'Regression Analysis',
-          'Time Series Analysis',
-          'A/B Testing'
+          'Matplotlib',
         ]
       }
     ]
   },
   {
     id: 'frontend',
-    title: 'Frontend Development',
+    title: 'Desenvolvimento Frontend',
     icon: <Code className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
-        category: 'Core Technologies',
+        category: 'Tecnologias Principais',
         items: [
           'React & React Hooks',
           'TypeScript',
           'Next.js',
-          'Modern JavaScript (ES6+)'
+          'JavaScript Moderno (ES6+)'
         ]
       },
       {
-        category: 'Styling',
+        category: 'Estilização',
         items: [
           'Tailwind CSS',
           'CSS-in-JS',
-          'Responsive Design',
-          'Animation & Transitions'
-        ]
-      },
-      {
-        category: 'State Management',
-        items: [
-          'Redux',
-          'React Context',
-          'Zustand',
-          'React Query'
-        ]
-      },
-      {
-        category: 'Testing & Tools',
-        items: [
-          'Jest & React Testing Library',
-          'Webpack & Vite',
-          'Performance Optimization',
-          'Browser DevTools'
+          'Design Responsivo',
+          'Animações & Transições'
         ]
       }
     ]
   },
   {
     id: 'backend',
-    title: 'Backend Development',
+    title: 'Desenvolvimento Backend',
     icon: <Server className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
-        category: 'Server Technologies',
+        category: 'Tecnologias de Servidor',
         items: [
           'Node.js & Express',
-          'RESTful API Design',
+          'Design de APIs RESTful',
           'GraphQL',
-          'Microservices'
-        ]
-      },
-      {
-        category: 'Databases',
-        items: [
-          'PostgreSQL',
-          'MongoDB',
-          'Redis',
-          'Database Optimization'
+          'Microsserviços'
         ]
       },
       {
         category: 'DevOps',
         items: [
           'Docker & Kubernetes',
-          'CI/CD Pipelines',
-          'AWS Services',
-          'Linux Administration'
+          'Pipelines CI/CD',
+          'Serviços AWS',
+          'Administração Linux'
         ]
       },
       {
-        category: 'Security',
+        category: 'Segurança',
         items: [
-          'Authentication & Authorization',
-          'API Security',
-          'Data Encryption',
-          'Security Best Practices'
+          'Autenticação & Autorização',
+          'Segurança de APIs',
+          'Criptografia de Dados',
+          'Melhores Práticas de Segurança'
         ]
       }
     ]
@@ -173,11 +137,11 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "React Component Library",
-    description: "A collection of reusable React components built with TypeScript and Tailwind CSS.",
+    title: "Antigo Portfólio",
+    description: "Primeiro portfólio que construí, quando estava começando minha carreira na área de desenvolvimento.",
     category: "frontend",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=500",
-    link: "#"
+    image: "./src/images/old_portfolio.png",
+    link: "https://portfolio-ericson.netlify.app/"
   },
   {
     id: 4,
@@ -189,6 +153,14 @@ const projects: Project[] = [
   },
   {
     id: 5,
+    title: "Clone Netflix",
+    description: "Quando comecei a estudar React, este foi o primeiro projeto que fiz.",
+    category: "frontend",
+    image: "./src/images/netflix_clone.png",
+    link: "https://ericsonmatheus-clone-net.netlify.app/"
+  },
+  {
+    id: 6,
     title: "RESTful API Service",
     description: "Scalable REST API built with Node.js, Express, and MongoDB for content management.",
     category: "backend",
@@ -196,7 +168,7 @@ const projects: Project[] = [
     link: "#"
   },
   {
-    id: 6,
+    id: 7,
     title: "Microservices Architecture",
     description: "Distributed system using microservices architecture with Docker and Kubernetes.",
     category: "backend",
@@ -285,7 +257,7 @@ function App() {
 
       {/* Projects Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Portfólio de Projetos</h2>
         
         {/* Category Filter */}
         <div className="flex justify-center gap-4 mb-12">
@@ -297,7 +269,7 @@ function App() {
                 : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
             }`}
           >
-            All Projects
+            Todos os Projetos
           </button>
           <button
             onClick={() => setActiveCategory('data')}
@@ -307,7 +279,7 @@ function App() {
                 : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
             }`}
           >
-            Data Analysis
+            Análise de Dados
           </button>
           <button
             onClick={() => setActiveCategory('frontend')}
@@ -352,9 +324,10 @@ function App() {
                 </p>
                 <a 
                   href={project.link}
+                  target="_blank"
                   className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  View Project <ExternalLink className="w-4 h-4 ml-2" />
+                  Ver Projeto <ExternalLink className="w-4 h-4 ml-2" />
                 </a>
               </div>
             </div>
@@ -365,16 +338,16 @@ function App() {
       {/* Contact Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-6">Vamos conversar!</h2>
           <p className="text-gray-300 mb-8">
-            I'm always interested in new opportunities and collaborations.
-            Feel free to reach out if you'd like to discuss a project or just say hello!
+            Estou sempre em busca de novas oportunidades e colaborações.
+            Fique à vontade para entrar em contato, seja para discutir um projeto ou apenas para dizer olá!
           </p>
           <a 
-            href="mailto:contact@example.com"
+            href="mailto:ericson.matheus.2016@gmail.com"
             className="inline-block bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors"
           >
-            Get in Touch
+            Enviar E-mail
           </a>
         </div>
       </section>
