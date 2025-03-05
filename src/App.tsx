@@ -25,129 +25,93 @@ interface Competency {
 const competencies: Competency[] = [
   {
     id: 'data',
-    title: 'Data Analysis',
+    title: 'Análise de Dados',
     icon: <Database className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
-        category: 'Python Analytics',
+        category: 'Análise com Python',
         items: [
           'Pandas & NumPy',
-          'ETL Proccessing',
+          'Desenvolvimento de Pipeline ETL',
           'Jupyter Notebooks',
-          'Data Cleaning & Preprocessing'
+          'Limpeza e Pré-processamento de Dados'
         ]
       },
       {
-        category: 'Database & SQL',
+        category: 'Banco de Dados & SQL',
         items: [
-          'Advanced SQL Query Optimization',
-          'Database Design & Modeling',
-          'ETL Pipeline Development',
-          'Data Warehouse Architecture'
+          'Otimização Avançada de Consultas SQL',
+          'Modelagem e Design de Banco de Dados',
+          'Tuning de Banco de Dados',
+          'Arquitetura de Data Lakehouse'
         ]
       },
       {
-        category: 'Visualization',
+        category: 'Visualização',
         items: [
           'Metabase',
           'Streamlit',
           'Power BI',
-          'Plotly & Matplotlib',
-        ]
-      },
-      {
-        category: 'Statistical Analysis',
-        items: [
-          'Hypothesis Testing',
-          'Regression Analysis',
-          'Time Series Analysis',
-          'A/B Testing'
+          'Matplotlib',
         ]
       }
     ]
   },
   {
     id: 'frontend',
-    title: 'Frontend Development',
+    title: 'Desenvolvimento Frontend',
     icon: <Code className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
-        category: 'Core Technologies',
+        category: 'Tecnologias Principais',
         items: [
           'React & React Hooks',
           'TypeScript',
           'Next.js',
-          'Modern JavaScript (ES6+)'
+          'JavaScript Moderno (ES6+)'
         ]
       },
       {
-        category: 'Styling',
+        category: 'Estilização',
         items: [
           'Tailwind CSS',
           'CSS-in-JS',
-          'Responsive Design',
-          'Animation & Transitions'
-        ]
-      },
-      {
-        category: 'State Management',
-        items: [
-          'Redux',
-          'React Context',
-          'Zustand',
-          'React Query'
-        ]
-      },
-      {
-        category: 'Testing & Tools',
-        items: [
-          'Jest & React Testing Library',
-          'Webpack & Vite',
-          'Performance Optimization',
-          'Browser DevTools'
+          'Design Responsivo',
+          'Animações & Transições'
         ]
       }
     ]
   },
   {
     id: 'backend',
-    title: 'Backend Development',
+    title: 'Desenvolvimento Backend',
     icon: <Server className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
       {
-        category: 'Server Technologies',
+        category: 'Tecnologias de Servidor',
         items: [
           'Node.js & Express',
-          'RESTful API Design',
+          'Design de APIs RESTful',
           'GraphQL',
-          'Microservices'
-        ]
-      },
-      {
-        category: 'Databases',
-        items: [
-          'PostgreSQL',
-          'MongoDB',
-          'Redis',
-          'Database Optimization'
+          'Microsserviços'
         ]
       },
       {
         category: 'DevOps',
         items: [
           'Docker & Kubernetes',
-          'CI/CD Pipelines',
-          'AWS Services',
-          'Linux Administration'
+          'Pipelines CI/CD',
+          'Serviços AWS',
+          'Administração Linux'
         ]
       },
       {
-        category: 'Security',
+        category: 'Segurança',
         items: [
-          'Authentication & Authorization',
-          'API Security',
-          'Data Encryption',
-          'Security Best Practices'
+          'Autenticação & Autorização',
+          'Segurança de APIs',
+          'Criptografia de Dados',
+          'Melhores Práticas de Segurança'
         ]
       }
     ]
