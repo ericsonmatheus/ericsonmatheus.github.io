@@ -127,14 +127,14 @@ const projects: Project[] = [
   //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=500",
   //   link: "#"
   // },
-  // {
-  //   id: 2,
-  //   title: "E-commerce Analytics Platform",
-  //   description: "Customer behavior analysis and sales prediction platform using machine learning algorithms.",
-  //   category: "data",
-  //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500",
-  //   link: "#"
-  // },
+  {
+    id: 2,
+    title: "Análise feita com IA de Turbina Eólica",
+    description: "Este projeto é foi o primeiro que eu comecei a trabalhar com IA, onde eu desenvolvi um modelo que me auxiliasse com a direção do vento. O objetivo final era entender se alguma direção era melhor ou pior para geração de energia.",
+    category: "data",
+    image: "/images/turbine.jpg",
+    link: "https://github.com/ericsonmatheus/wind_turbine/blob/main/wind_turbine_analysis.ipynb"
+  },
   {
     id: 3,
     title: "Antigo Portfólio",
