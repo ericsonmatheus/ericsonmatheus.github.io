@@ -24,7 +24,7 @@ interface Competency {
 
 const competencies: Competency[] = [
   {
-    id: 'data',
+    id: 'data-analysis',
     title: 'Análise de Dados',
     icon: <Database className="w-12 h-12 text-blue-500 mb-4" />,
     skills: [
@@ -56,6 +56,62 @@ const competencies: Competency[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'data-engineering',
+    title: 'Engenharia de Dados',
+    icon: <Database className="w-12 h-12 text-blue-500 mb-4" />,
+    skills: [
+      {
+        category: 'Engenharia de Dados',
+        items: [
+          'Desenvolvimento de Pipelines ETL',
+          'Integração de Dados com APIs e Web Scraping',
+          'Gerenciamento e Orquestração de Fluxos de Dados'
+        ]
+      },
+      {
+        category: 'Ferramentas de Engenharia de Dados',
+        items: [
+          'Python',
+          'Airflow',
+          'Kedro',
+        ]
+      },
+      {
+        category: 'Banco de Dados e Armazenamento de Dados',
+        items: [
+          'Tuning de Consultas SQL',
+          'Modelagem de Banco de Dados',
+          'Manuseio de Dados em Parquet',
+        ]
+      },
+      {
+        category: 'Plataformas de Big Data',
+        items: [
+          'Gerenciamento de Cluster de Big Data com Databricks',
+          'Armazenamento de Dados em Ambientes Cloud (AWS)',
+        ]
+      },
+      {
+        category: 'Automação e DevOps para Dados',
+        items: [
+          'Automação de Pipelines de Dados com Docker e Kubernetes',
+          'Integração Contínua e Deploy Contínuo (CI/CD) para Pipelines de Dados',
+          'Gerenciamento de Infraestrutura para Pipelines de Dados',
+        ]
+      },
+      {
+        category: 'Ferramentas de Visualização',
+        items: [
+          'Power BI',
+          'Streamlit',
+          'Metabase',
+          'Visualizações com Matplotlib, Seaborn e Plotly',
+        ]
+      },
+    ]
+    
   },
   {
     id: 'frontend',
@@ -119,14 +175,14 @@ const competencies: Competency[] = [
 ];
 
 const projects: Project[] = [
-  // {
-  //   id: 1,
-  //   title: "Market Trend Analysis Dashboard",
-  //   description: "Interactive dashboard analyzing market trends using Python, Pandas, and SQL, with visualizations in Plotly.",
-  //   category: "data",
-  //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=500",
-  //   link: "#"
-  // },
+  {
+    id: 1,
+    title: "Desafio - Análise de Dados Alimentícios",
+    description: "Projeto com o intuito de apresentar o conhecimento de algumas ferramentas de análise de Dados como o Pandas, Faker, Matplotlib, Seaborn, entre outras.",
+    category: "data",
+    image: "/images/food_pipeline.jpg",
+    link: "https://github.com/ericsonmatheus/food_pipeline_challenge"
+  },
   {
     id: 2,
     title: "Análise feita com IA de Turbina Eólica",
